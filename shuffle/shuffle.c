@@ -65,6 +65,9 @@ main(int argc, char *argv[])
 	buf[34] = FLAG[34];
 	buf[35] = FLAG[35];
 	buf[36] = FLAG[36];
+	buf[37] = FLAG[37];
+	buf[38] = FLAG[38];
+	buf[39] = FLAG[39];
 
 	srand(time(NULL) + getpid());
 	for (i = 0; i < 100; i++) {
@@ -73,7 +76,7 @@ main(int argc, char *argv[])
 		int tmp = buf[r1];
 		buf[r1] = buf[r2];
 		buf[r2] = tmp;
-        }
+	}
 	printf("%s\n", buf);
 	return 0;
 }
